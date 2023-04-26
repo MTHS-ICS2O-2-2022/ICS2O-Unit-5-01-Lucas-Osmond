@@ -18,7 +18,7 @@
 .getmdl-select .mdl-icon-toggle__label {
   float: right;
   margin-top: -30px;
-  color: rgba(255, 255, 255, 40%);
+  color: black;
   transform: rotate(0);
   transition: transform 0.3s
 }
