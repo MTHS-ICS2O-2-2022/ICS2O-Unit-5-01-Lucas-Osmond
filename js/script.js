@@ -26,6 +26,6 @@ function myButtonClicked () {
   if (valueFromSlider != randomNumber) {
     // output
     document.getElementById('answer').innerHTML = 
-    "you are worng LOL!"
+    "you are wrong LOL!"
   }
 }
