@@ -11,21 +11,21 @@ const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integ
 /**
  * This function updates a slider value.
  */
-function updateSliderValue () {
+function myButtonClicked () {
   // this function updates the slider value
-  document.getElementById("sliderValue").innerHTML = valueFromSlider
+  const valueFromSlider = parseInt(document.getElementById('guessed-number').value)
 
   //process
   if (valueFromSlider == randomNumber) {
     // output
     document.getElementById('answer').innerHTML = 
-    "the answer was," + randomNumber + "!" + 'You are correct!'
+    "Congrats, you are right!"
   }
 
   // block of code to be executed if the condition1 is true
-  if (valueFromSlider < randomNumber) {
+  if (valueFromSlider != randomNumber) {
     // output
     document.getElementById('answer').innerHTML = 
-    "the answer was," + randomNumber + "!" + 'You are too low!'
+    "you are worng LOL!"
   }
 }
