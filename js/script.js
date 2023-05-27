@@ -14,6 +14,7 @@ const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integ
 function myButtonClicked () {
   // this function updates the slider value
   const valueFromSlider = parseInt(document.getElementById('guessed-number').value)
+  console.log(valueFromSlider)  
 
   //process
   if (valueFromSlider == randomNumber) {
